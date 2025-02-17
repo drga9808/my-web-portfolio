@@ -1,16 +1,23 @@
 .gradient-background {
-    background: linear-gradient(300deg, #f7f9fc, #e3eaf3, #dfe7ec);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
+  background: linear-gradient(300deg, #f7f9fc, #e3eaf3, #dfe7ec);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
 }
 
-body p{
-    color: #6482ad;
-    font-family: "Merriweather", serif;
+body p {
+  color: #6482ad;
+  font-family: "Merriweather", serif;
+  font-size: 1.2rem !important;
 }
 
-body h2{
-    color: #6482ad;
+h1 {
+  color: #6482ad !important;
+  font-size: 3rem !important;
+}
+
+h2 {
+  color: #6482ad !important;
+  font-size: 2.8rem !important;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -37,38 +44,101 @@ body h2{
 }
 
 /* ----------------------------------------------------------------------- */
+/* Description */
+.description {
+  width: 70%;
+  margin: auto;
+}
+
+/* ----------------------------------------------------------------------- */
 /* Album */
 .album {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 100px;
+  margin-bottom: 100px;
+  width: 70%;
+  margin: auto;
 }
 
 .carousel img {
+  width: 60%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.pb-custom{
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 768px) {
+  .carousel img {
     width: 60%;
-    height: 220px; 
+    height: 220px;
     object-fit: cover;
     border-radius: 30px;
+  }
+}
+
+/* ----------------------------------------------------------------------- */
+/* Reading */
+.reading {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.reading h5 {
+  color: #6482ad;
+}
+
+.reading  .card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.reading .card:hover {
+  transform: scale(1.05);
+}
+
+.reading  .card img {
+  height: 250px;
+  object-fit:fill;
+}
+
+.books {
+  justify-content: center;
+  /* gap: 20px;  */
+}
+
+/* Apply justify-content: space-between for large screens (lg and up) */
+@media (min-width: 992px) { 
+  .books {
+      justify-content: space-between !important;
+  }
 }
 
 /* ----------------------------------------------------------------------- */
 /* Footer */
 .gradient-background-1 {
-    background: linear-gradient(300deg, #7fa1c3, #4c585b, #6482ad);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
-  }
-  
-  .footer .nav-link {
-    color: #e2dad6 !important;
-  }
-  
-  .footer .nav-link:hover {
-    color: #f5eded !important; /* Cambia el color al pasar el mouse */
-  }
-  
-  .footer-copyright {
-      color: #e2dad6 !important;
-  }
-  
-  
+  background: linear-gradient(300deg, #7fa1c3, #4c585b, #6482ad);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.footer {
+  width: 100%;
+  max-width: 100vw;
+}
+
+.footer .nav-link {
+  color: #e2dad6 !important;
+}
+
+.footer .nav-link:hover {
+  color: #f5eded !important; /* Cambia el color al pasar el mouse */
+}
+
+.footer-copyright {
+  color: #e2dad6 !important;
+}
