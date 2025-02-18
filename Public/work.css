@@ -10,8 +10,14 @@ body p {
   font-size: 1.2rem !important;
 }
 
-body h2 {
-  color: #6482ad;
+h1 {
+  color: #6482ad !important;
+  font-size: 3rem !important;
+}
+
+h2 {
+  color: #6482ad !important;
+  font-size: 2.8rem !important;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -38,69 +44,9 @@ body h2 {
   padding-right: 15px; /* Opcional para mantener equilibrio */
 }
 
+
 .py-custom {
   padding: 100px 0px;
-}
-
-/* ----------------------------------------------------------------------- */
-/* Profile */
-.profile {
-  padding-top: 100px;
-}
-
-.social-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  padding: 0;
-  padding-bottom: 3rem;
-}
-
-.social-links li {
-  display: inline-block;
-}
-
-.social-links a {
-  color: #6482ad;
-}
-.social-links a:hover svg {
-  color: #f5eded;
-}
-
-.custom-hr {
-  border: dotted #6482ad 6px;
-  border-bottom: none;
-  width: 4%;
-  margin: 80px auto;
-}
-
-.intro {
-  width: 30%;
-  margin: auto;
-}
-
-@media (max-width: 768px) {
-  .intro {
-    width: 50%;
-    margin: auto;
-  }
-}
-
-/* ----------------------------------------------------------------------- */
-/* Skills */
-.gradient-background-2 {
-  background: linear-gradient(300deg, #f5ecd5, #f5eded, #a6cdc6);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
-}
-
-.card p {
-  color: #6482ad !important;
-}
-
-.card h3 {
-  color: #6482ad !important;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -109,6 +55,11 @@ body h2 {
   background: linear-gradient(300deg, #7fa1c3, #4c585b, #6482ad);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
+}
+
+.footer {
+  width: 100%;
+  max-width: 100vw;
 }
 
 .footer .nav-link {

@@ -39,6 +39,11 @@ h2 {
   color: #f5eded !important; /* Cambia el color al pasar el mouse */
 }
 
+.header .navbar-nav .nav-link.active {
+  padding-left: 10px; /* Ajusta según lo necesites */
+  padding-right: 15px; /* Opcional para mantener equilibrio */
+}
+
 .py-custom {
   padding: 100px 0px;
 }
@@ -50,6 +55,27 @@ h2 {
   margin: auto;
 }
 
+.custom-padding {
+  padding: 7rem 4rem 5rem 4rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .description {
+    width: 90%;
+    justify-content: center !important;
+    text-align: justify;
+  }
+  .description h1 {
+    font-size: 2rem;
+    text-align: start !important;
+  }
+
+  .custom-padding {
+    padding: 2rem 2rem 2rem 2rem;
+    margin-bottom: 2rem;
+  }
+}
 /* ----------------------------------------------------------------------- */
 /* Album */
 .album {
@@ -65,16 +91,18 @@ h2 {
   border-radius: 30px;
 }
 
-.pb-custom{
+.pb-custom {
   padding-bottom: 6rem;
 }
 
 @media (max-width: 768px) {
-  .carousel img {
-    width: 60%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 30px;
+  .album {
+    text-align: justify !important;
+    width: 90%;
+    margin: auto;
+  }
+  .album h2{
+    text-align: start !important;
   }
 }
 
@@ -90,7 +118,7 @@ h2 {
   color: #6482ad;
 }
 
-.reading  .card {
+.reading .card {
   border: none;
   border-radius: 20px;
   overflow: hidden;
@@ -101,20 +129,40 @@ h2 {
   transform: scale(1.05);
 }
 
-.reading  .card img {
+.reading .card img {
   height: 250px;
-  object-fit:fill;
+  object-fit: fill;
 }
 
 .books {
   justify-content: center;
-  /* gap: 20px;  */
 }
 
-/* Apply justify-content: space-between for large screens (lg and up) */
-@media (min-width: 992px) { 
+@media (max-width: 768px) {
+  .reading {
+    width: 80%;
+    margin: auto;
+  }
+  .reading .card img {
+    height: 200px;
+    object-fit: fill;
+  }
+  .reading > div > p{
+    text-align: justify !important;
+  }
+  .reading h2{
+    text-align: start !important;
+  }
+
+  .books p{
+    text-align: justify !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 992px) {
   .books {
-      justify-content: space-between !important;
+    justify-content: space-between !important;
   }
 }
 

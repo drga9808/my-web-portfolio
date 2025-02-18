@@ -18,27 +18,44 @@
 <body class="gradient-background">
 
     <section class="header gradient-background-1">
-        <div class="container header">
-            <header class="d-flex justify-content-center py-3">
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Education</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Work Experience</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link active">About Me</a></li>
-                </ul>
-            </header>
-        </div>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container">
+                <!-- Toggler Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto nav-pills">
+                        <li class="nav-item mt-sm-0 mt-3">
+                            <a href="../index.html" class="nav-link" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./education.html" class="nav-link">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./work-experience.html" class="nav-link">Work Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./about.html" class="nav-link active">About Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </section>
 
     <section class="description">
-        <div class="container col-xxl-12 px-4 py-5 mb-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
-                <div class="col-10 col-sm-8 col-lg-5">
+        <div class="container col-xxl-12 custom-padding">
+            <div class="row flex-lg-row-reverse align-items-center g-5">
+                <div class="col-sm-8 col-12 col-lg-5">
                     <img src="../images/desktop.png" class="desc-img d-block mx-lg-auto img-fluid"
                         alt="Programmer working on a Desktop" loading="lazy">
 
                 </div>
-                <div class="col-10 col-sm-12 col-lg-7 pl-0 ml-0">
+                <div class="col-lg-7 col-12 pl-0 ml-0">
                     <h1 class="fw-bold lh-1 mb-5">I practically live in front of a computer.
                     </h1>
                     <p class="lead">I’ve been fascinated by technology ever since I got my hands on a computer as a
@@ -199,7 +216,7 @@
     <section class="reading pb-5">
         <div class="container text-center">
             <!-- Section Heading -->
-            <h2 class="fw-bold mb-4">📚 Reading for Self-Improvement.</h2>
+            <h2 class="fw-bold mb-4">📚 Reading for Self Improvement.</h2>
 
             <!-- Section Introduction -->
             <p class="lead mx-auto" style="max-width: 800px;">
@@ -214,7 +231,7 @@
             <!-- Books Grid -->
             <div class="row books pt-5">
                 <!-- Book 1 -->
-                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8 col-10 mb-4">
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12 mb-4">
                     <div class="card h-100 shadow-sm">
                         <img src="../images/books/da-vinci-bio.jpg" class="card-img-top" hight="200px"
                             alt="Leonardo Da Vinci Biography Cover">
@@ -228,7 +245,7 @@
                 </div>
 
                 <!-- Book 2 -->
-                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8 col-10 mb-4">
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12 mb-4">
                     <div class="card h-100 shadow-sm">
                         <img src="../images/books/i-will-teach-you.jpg" class="card-img-top"
                             alt="I Will Teach You To Be Rich Cover">
@@ -242,7 +259,7 @@
                 </div>
 
                 <!-- Book 3 -->
-                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8 col-10 mb-4">
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12 mb-4">
                     <div class="card h-100 shadow-sm">
                         <img src="../images/books/to-sell-is-human.jpg" class="card-img-top"
                             alt="To Sell Is Human Cover">
