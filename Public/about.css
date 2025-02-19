@@ -64,7 +64,7 @@ h2 {
   .description {
     width: 90%;
     justify-content: center !important;
-    text-align: justify;
+    text-align: start;
   }
   .description h1 {
     font-size: 2rem;
@@ -101,7 +101,7 @@ h2 {
 
 @media (max-width: 768px) {
   .album {
-    text-align: justify !important;
+    text-align: start !important;
     width: 90%;
     margin: auto;
   }
@@ -152,14 +152,14 @@ h2 {
     object-fit: fill;
   }
   .reading > div > p{
-    text-align: justify !important;
+    text-align: start !important;
   }
   .reading h2{
     text-align: start !important;
   }
 
   .books p{
-    text-align: justify !important;
+    text-align: start !important;
     font-size: 1rem !important;
   }
 }
