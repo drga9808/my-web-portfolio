@@ -64,6 +64,27 @@ h2 {
   margin: auto;
 }
 
+.title-heading {
+  font-size: 2rem; /* Default for small screens */
+  font-weight: 700; /* Keeps it bold but elegant */
+  color: #4c5c96; /* Professional dark blue shade */
+  text-transform: capitalize; /* Makes it more formal */
+  letter-spacing: 1px; /* Enhances readability */
+}
+
+/* Increase size for larger screens */
+@media (min-width: 768px) {
+  .title-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title-heading {
+    font-size: 3rem; /* Bigger for desktop */
+  }
+}
+
 .main .card {
   padding: 1rem;
   margin: 4rem;
@@ -71,9 +92,31 @@ h2 {
 }
 
 .gradient-background-card {
-  background: linear-gradient(300deg, #f5ecd5, #f5eded , #a6cdc6);
+  background: linear-gradient(300deg, #f5ecd5, #f5eded, #a6cdc6);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h4 {
+  color: #6482ad !important;
+  font-size: 2rem !important;
+}
+
+h5 {
+  color: #6482ad !important;
+  font-size: 1.2rem !important;
+}
+
+a p {
+  font-size: 1.2rem !important;
+}
+
+li {
+  color: #6482ad !important;
 }
 
 @media (max-width: 768px) {
@@ -85,6 +128,103 @@ h2 {
     padding: 1rem;
     margin: 4rem 0px;
     border-radius: 15%;
+  }
+}
+
+/* --------------------------------------------------------------------- */
+/* Main Section */
+.main {
+  flex: 1;
+  width: 70%;
+  margin: auto;
+}
+
+/* Title Styling */
+.title-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4c5c96;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+/* larger screens */
+@media (min-width: 768px) {
+  .title-heading {
+    font-size: 2.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .title-heading {
+    font-size: 3rem;
+  }
+}
+
+/* Card Styling */
+.main .card {
+  padding: 2rem;
+  margin: 3rem 0;
+  border-radius: 15px;
+}
+
+.gradient-background-card {
+  background: linear-gradient(300deg, #f5ecd5, #f5eded, #a6cdc6);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+/* Education Layout */
+.education-layout {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.text-container {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-text,
+li {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+/* Image Styling */
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  order: -1;
+}
+
+.school-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.citedi-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Responsive Layout Adjustments */
+@media (min-width: 1200px) {
+  .education-layout {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .text-container {
+    padding-right: 2rem;
+    text-align: start;
+  }
+  .school-logo {
+    max-width: 300px;
   }
 }
 
@@ -106,7 +246,7 @@ h2 {
 }
 
 .footer .nav-link:hover {
-  color: #f5eded !important; /* Cambia el color al pasar el mouse */
+  color: #f5eded !important;
 }
 
 .footer-copyright {
