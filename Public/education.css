@@ -10,12 +10,12 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
 }
 
 body p {
   color: #6482ad;
-  font-family: "Merriweather", serif;
-  font-size: 1.2rem !important;
 }
 
 h1 {
@@ -56,89 +56,33 @@ h2 {
   padding: 100px 0px;
 }
 
-/* ----------------------------------------------------------------------- */
-/* Main */
+/* --------------------------------------------------------------------- */
+/* Main Section */
 .main {
   flex: 1;
-  width: 70%;
+  width: 90%;
   margin: auto;
+  color: #6482ad !important;
 }
-
-.title-heading {
-  font-size: 2rem; /* Default for small screens */
-  font-weight: 700; /* Keeps it bold but elegant */
-  color: #4c5c96; /* Professional dark blue shade */
-  text-transform: capitalize; /* Makes it more formal */
-  letter-spacing: 1px; /* Enhances readability */
-}
-
-/* Increase size for larger screens */
-@media (min-width: 768px) {
-  .title-heading {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .title-heading {
-    font-size: 3rem; /* Bigger for desktop */
-  }
-}
-
-.main .card {
-  padding: 1rem;
-  margin: 4rem;
-  border-radius: 15%;
-}
-
 .gradient-background-card {
   background: linear-gradient(300deg, #f5ecd5, #f5eded, #a6cdc6);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
-
-a {
-  text-decoration: none !important;
-}
-
 h4 {
   color: #6482ad !important;
   font-size: 2rem !important;
 }
-
 h5 {
   color: #6482ad !important;
   font-size: 1.2rem !important;
 }
-
+a {
+  text-decoration: none !important;
+}
 a p {
-  font-size: 1.2rem !important;
+  font-size: 1.1rem;
 }
-
-li {
-  color: #6482ad !important;
-}
-
-@media (max-width: 768px) {
-  .main {
-    width: 80% !important;
-    margin: auto;
-  }
-  .main .card {
-    padding: 1rem;
-    margin: 4rem 0px;
-    border-radius: 15%;
-  }
-}
-
-/* --------------------------------------------------------------------- */
-/* Main Section */
-.main {
-  flex: 1;
-  width: 70%;
-  margin: auto;
-}
-
 /* Title Styling */
 .title-heading {
   font-size: 2rem;
@@ -147,52 +91,27 @@ li {
   text-transform: capitalize;
   letter-spacing: 1px;
 }
-
-/* larger screens */
-@media (min-width: 768px) {
-  .title-heading {
-    font-size: 2.5rem;
-  }
-}
-
-/* Desktop */
-@media (min-width: 1200px) {
-  .title-heading {
-    font-size: 3rem;
-  }
-}
-
 /* Card Styling */
+.main {
+  padding-bottom: 6rem;
+}
 .main .card {
-  padding: 2rem;
+  padding: 1.5rem;
   margin: 3rem 0;
   border-radius: 15px;
 }
-
-.gradient-background-card {
-  background: linear-gradient(300deg, #f5ecd5, #f5eded, #a6cdc6);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
-}
-
-/* Education Layout */
-.education-layout {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-}
-
-.text-container {
-  padding: 1rem;
+.card-title {
   text-align: center;
 }
-
+.text-container {
+  text-align: start;
+}
 .card-text,
 li {
-  text-align: justify;
+  text-align: start;
   margin-bottom: 10px;
+  color: #6482ad !important;
 }
-
 /* Image Styling */
 .image-container {
   display: flex;
@@ -200,31 +119,66 @@ li {
   padding: 1rem;
   order: -1;
 }
-
 .school-logo {
   max-width: 150px;
   height: auto;
+  float: none; /* Removes float on smaller screens */
+  display: block;
+  margin: 0 auto 15px auto; /* Centers the image */
+  padding-bottom: 1.5rem;
 }
 
-.citedi-logo {
-  max-width: 200px;
-  height: auto;
-}
-
-/* Responsive Layout Adjustments */
-@media (min-width: 1200px) {
-  .education-layout {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
+/* Larger screens */
+@media (min-width: 550px) {
+  .main {
+    width: 60%;
+  }
+  .card-title {
+    text-align: center;
+  }
+  .title-heading {
+    font-size: 2.5rem;
+  }
+  .text-container {
+    padding: 1rem;
+    text-align: center !important;
+    overflow: hidden; 
+  }
+  .card-text {
+    text-align: left !important;
   }
 
-  .text-container {
-    padding-right: 2rem;
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .main {
+    width: 50%;
+    margin: auto;
+  }  
+  .card-title {
     text-align: start;
   }
+  .title-heading {
+    font-size: 3rem;
+  }
+  .text-container {
+    padding-right: 2rem;
+    text-align: start !important;
+  }
+  .card-text {
+    text-align: start !important;
+  }
+  .image-container {
+    padding: 2rem;
+  }
   .school-logo {
-    max-width: 300px;
+    float: right;
+    max-width: 120px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 50px;
   }
 }
 
