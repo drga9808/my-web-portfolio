@@ -1,0 +1,141 @@
+/* ========================================
+   GLOBAL STYLES
+========================================= */
+
+/* Body */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa; /* Light neutral background */
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Headings font & color */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1c2a39; /* Dark navy for headings */
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+    color: inherit; /* Inherit color for standard text links */
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ========================================
+     NAVBAR
+  ========================================= */
+  .navbar {
+    background-color: #1c2a39; /* Dark navy */
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff8f47; /* Accent orange on hover */
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: #ff8f47;
+  }
+  
+  /* ========================================
+     MAIN
+  ========================================= */
+  main.flex-grow-1 {
+    /* This ensures the main pushes footer down if content is short */
+  }
+  
+  /* Section Headings */
+  h2 {
+    color: #1c2a39;
+    font-size: 2rem;
+  }
+  
+  /* Education Cards */
+  .edu-card {
+    background-color: #ffffff;
+    border-left: 6px solid #ff8f47; /* Subtle accent on the left edge */
+    border-radius: 8px;
+  }
+  .edu-card .card-body {
+    padding: 2rem;
+  }
+  
+  /* School Logos */
+  .school-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Utility Links (Locations) */
+  .location-link p {
+    color: #666;
+    margin-bottom: 0;
+  }
+  
+  /* Lists inside the cards */
+  .edu-card ul {
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .edu-card li {
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  /* ========================================
+     FOOTER
+  ========================================= */
+  .footer {
+    background-color: #1c2a39;
+  }
+  
+  .footer-link {
+    color: #ff8f47; /* accent color for email/phone links */
+    font-weight: 500;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .text-muted {
+    color: #ccc !important;
+  }
+  
+  /* ========================================
+     MEDIA QUERIES
+  ========================================= */
+  @media (max-width: 576px) {
+    .edu-card .card-body {
+      padding: 1rem;
+    }
+    .school-logo {
+      width: 80px;
+      padding-bottom: 2rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 2.4rem;
+    }
+    .edu-card .card-body {
+      padding: 2rem 3rem;
+    }
+    .school-logo {
+      width: 120px;
+    }
+  }

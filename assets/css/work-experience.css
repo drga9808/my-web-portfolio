@@ -1,0 +1,129 @@
+/* ========================================
+   GLOBAL STYLES
+========================================= */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #1c2a39; /* Dark navy */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========================================
+   NAVBAR
+========================================= */
+.navbar {
+  background-color: #1c2a39; /* Dark navy */
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ff8f47;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #ff8f47;
+}
+
+/* ========================================
+   MAIN TIMELINE
+========================================= */
+.flex-grow-1 {
+  flex: 1;
+}
+
+/* The timeline container */
+.timeline {
+  position: relative;
+  margin-top: 40px;
+  padding: 0 1rem;
+}
+
+/* Each block (left or right) */
+.timeline-block {
+  width: 100%;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Alternate the .timeline-content on large screens */
+.timeline-block.left .timeline-content {
+  float: left;
+  clear: both;
+  margin-left: 50px;
+}
+
+.timeline-block.right .timeline-content {
+  float: right;
+  clear: both;
+  margin-right: 50px;
+}
+
+/* The content box */
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  background: #fff;
+  border-left: 6px solid #ff8f47; /* accent line on the left side */
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* For smaller screens, stack them vertically */
+@media (max-width: 767.98px) {
+  .timeline-block.left .timeline-content,
+  .timeline-block.right .timeline-content {
+    float: none;
+    width: 100%;
+    margin: 0 0 40px 0;
+  }
+}
+
+/* ========================================
+   FOOTER
+========================================= */
+.footer {
+  background-color: #1c2a39;
+}
+
+.footer-link {
+  color: #ff8f47;
+  font-weight: 500;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.text-muted {
+  color: #ccc !important;
+}

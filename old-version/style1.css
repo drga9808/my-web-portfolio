@@ -4,22 +4,18 @@
   animation: gradient-animation 18s ease infinite;
 }
 
-body p {
-  color: #6482ad;
+body {
   font-family: "Merriweather", serif;
-  font-size: 1.2rem !important;
+  color: #6482ad; 
+  font-size: 16px; /* typical base */
+}
+h1, h2, h3, h4, h5 {
+  color: #6482ad; /* heading color */
 }
 
-h1 {
-  color: #6482ad !important;
-  font-size: 3rem !important;
+p {
+  font-size: 1rem; 
 }
-
-h2 {
-  color: #6482ad !important;
-  font-size: 2.8rem !important;
-}
-
 /* ----------------------------------------------------------------------- */
 /* Header */
 .header .nav-link {
@@ -44,9 +40,57 @@ h2 {
   padding-right: 15px; /* Opcional para mantener equilibrio */
 }
 
-
 .py-custom {
   padding: 100px 0px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Profile */
+.profile {
+  padding-top: 100px;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  padding-bottom: 3rem;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  color: #6482ad;
+}
+.social-links a:hover svg {
+  color: #f5eded;
+}
+
+.custom-hr {
+  border: dotted #6482ad 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 80px auto;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Skills */
+.gradient-background-2 {
+  background: linear-gradient(300deg, #f5ecd5, #f5eded, #a6cdc6);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.card p {
+  color: #6482ad !important;
+}
+
+.card h3 {
+  color: #6482ad !important;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -55,11 +99,6 @@ h2 {
   background: linear-gradient(300deg, #7fa1c3, #4c585b, #6482ad);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
-}
-
-.footer {
-  width: 100%;
-  max-width: 100vw;
 }
 
 .footer .nav-link {

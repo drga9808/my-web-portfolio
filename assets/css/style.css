@@ -1,0 +1,132 @@
+/* ========================================
+   GLOBAL STYLES
+========================================= */
+
+/* Body */
+body {
+    background: #f5f7fa; /* Light, neutral background */
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+  }
+  
+  /* Headings font & color */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1c2a39;
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+    color: inherit; /* Inherit text color unless specified */
+  }
+  
+  /* Hover effect for basic links */
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ========================================
+     NAVBAR
+  ========================================= */
+  
+  .navbar {
+    background-color: #1c2a39; /* Dark navy */
+  }
+  
+  /* Make nav links visible on dark background */
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff8f47; /* Accent color for hover */
+  }
+  
+  /* Active link in navbar */
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: #ff8f47;
+  }
+  
+  /* Toggler button border */
+  .navbar-toggler {
+    border-color: #fff;
+  }
+  
+  /* ========================================
+     PROFILE SECTION
+  ========================================= */
+  
+  .profile-section img {
+    max-width: 180px;
+    height: auto;
+  }
+  
+  /* Social link icons in the profile section */
+  .social-links svg {
+    transition: color 0.2s ease;
+    color: #1c2a39; /* Default icon color, matches heading color */
+  }
+  .social-links svg:hover {
+    color: #ff8f47;
+  }
+  
+  .intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666; /* Slightly lighter text color for paragraphs */
+  }
+  
+  /* ========================================
+     SKILLS CARDS
+  ========================================= */
+  
+  .skill-card {
+    background-color: #fff; /* White card background */
+    border-radius: 8px;
+  }
+  
+  .skill-card h3 {
+    color: #1c2a39;
+  }
+  
+  .skill-card p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  /* ========================================
+     FOOTER
+  ========================================= */
+  
+  .footer {
+    background-color: #1c2a39;
+  }
+  
+  .footer-link {
+    color: #ff8f47; /* Accent color */
+    font-weight: 500;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Text color override if needed */
+  .footer .text-white {
+    color: #fff !important;
+  }
+  
+  /* ========================================
+     MEDIA QUERIES (Optional)
+  ========================================= */
+  
+  @media (max-width: 576px) {
+    .intro {
+      font-size: 1rem;
+    }
+  }
